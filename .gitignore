@@ -1,5 +1,6 @@
 ## Project specific:
 samples/**/*.pdf
+legacy/
 main.pdf
 
 ## OS files:
