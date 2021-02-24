@@ -46,34 +46,53 @@
 
 % Change the colours if you want to
 %fonts from sample doc
-
-%\definecolor{SlateGrey}{HTML}{2E2E2E}
-%\definecolor{LightGrey}{HTML}{666666}
-%\definecolor{DarkPastelRed}{HTML}{450808}
-%\definecolor{PastelRed}{HTML}{8F0D0D}
-%\definecolor{GoldenEarth}{HTML}{E7D192}
-%\colorlet{name}{black}
-%\colorlet{tagline}{PastelRed}
-%\colorlet{heading}{DarkPastelRed}
-%\colorlet{headingrule}{GoldenEarth}
-%\colorlet{subheading}{PastelRed}
-%\colorlet{accent}{PastelRed}
-%\colorlet{emphasis}{SlateGrey}
-%\colorlet{body}{LightGrey}
-
-%%
-\definecolor{VividPurple}{HTML}{3E0097}
+%Red and Gold
+\iffalse
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-% \colorlet{name}{black}
-% \colorlet{tagline}{PastelRed}
-\colorlet{heading}{VividPurple}
-\colorlet{headingrule}{VividPurple}
-% \colorlet{subheading}{PastelRed}
-\colorlet{accent}{VividPurple}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
-
+\fi
+%Way Up North
+\iffalse
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{WhiteD}{HTML}{666666}
+\definecolor{NavyBlue}{HTML}{1E3D58}
+\definecolor{RoyalBlue}{HTML}{057DCD}
+\definecolor{BlueGrotto}{HTML}{43B0F1}
+\colorlet{name}{black}
+\colorlet{tagline}{RoyalBlue}
+\colorlet{heading}{NavyBlue}
+\colorlet{headingrule}{RoyalBlue}
+\colorlet{subheading}{RoyalBlue}
+\colorlet{accent}{RoyalBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{WhiteD}
+\fi
+%Lucky Lime
+\iftrue
+\definecolor{LightGrey}{HTML}{848484}
+\definecolor{DarkRed}{HTML}{970C10}
+\definecolor{Ebony}{HTML}{433F30}
+\definecolor{GunMetal}{HTML}{747266}
+\colorlet{name}{black}
+\colorlet{tagline}{DarkRed}
+\colorlet{heading}{DarkRed}
+\colorlet{headingrule}{Ebony}
+\colorlet{subheading}{Ebony}
+\colorlet{accent}{Ebony}
+\colorlet{emphasis}{Ebony}
+\colorlet{body}{LightGrey}
+\fi
 % Change some fonts, if necessary
 % \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 % \renewcommand{\personalinfofont}{\footnotesize}
@@ -89,23 +108,23 @@
 \addbibresource{sample.bib}
 
 \begin{document}
-\name{Marissa Mayer}
-\tagline{Business Woman \& Proud Geek}
+\name{João André de Jesus Cruz}
+\tagline{Electronics and Telecommunications Engineering MSc Student}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
-\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+\photoR{2.5cm}{images/cruz.jpg}
 % \photoL{2cm}{Yacht_High,Suitcase_High}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{mmayer@yahoo-inc.com}
-%   \phone{000-00-0000}
-  \mailaddress{Addresss, Street, 00000 County}
-  \location{Sunnyvale, CA}
-  \homepage{marissamayr.tumblr.com}
-  \twitter{@marissamayer}
-  \linkedin{marissamayer}
-%   \github{github.com/mmayer} % I'm just making this up though.
+  \email{jcruz26595@gmail.com}
+  \phone{+351 915465081}
+  %\mailaddress{Carapelhos, Mira/Aveiro}
+  \location{Carapelhos, Mira/Aveiro - Portugal}\\
+  %\homepage{marissamayr.tumblr.com}
+%  \twitter{@marissamayer}
+  \linkedin{joaocruz26}
+  \github{joaoandre26} % I'm just making this up though.
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{0000-0000-0000-0000}
@@ -129,151 +148,202 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
+%---------------------------------------------1st Column----------------------------------------------
+%% Education
+\cvsection{Education}
 
-\cvsection{Experience}
+  \cvevent{MSc Electronics and Telecommunications Engineering}{University of Aveiro}{Sept 2014 -- Present}{}
+  \begin{itemize}
+    \item Master oriented in Control and Automation
+    \item Dissertation Title "IoT-based Telemetry for Containers"
+  \end{itemize}
+  
+  
+\cvsection{Volunteer Experience}
 
-\cvevent{President \& CEO}{Yahoo!}{July 2012 -- Ongoing}{Sunnyvale, CA}
+% Experience 
+\cvevent{\href{https://eestec.net/cities/aveiro/}{EESTEC (J)LC Aveiro}}{}{2017 -- Present}{Aveiro, Portugal}
 \begin{itemize}
-\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
-\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
-\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
-\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+%  \item Head-Organizer 1st Edition DETI Pymps UA (Pimp my DETI) - October 2018 to February 2019 (JLC Aveiro)
+  \item Treasurer - 2018 (JLC Aveiro)
+  \item ChairPerson - 2019 ((J)LC Aveiro)
+  \item Oversight Committe - 2020 (LC Aveiro)
+  \item Data Team[History Collectors] - November 2019 to August 2020 (EESTEC)
 \end{itemize}
 
-\divider
+% Extra Experience
+\cvsection{Other Experience}
+\cvevent{Holidays Work}{Contruction/Painting}{2008 -- Present}{}
+Experience helped to be autonumous/independent, to work in group and to be open to different/new solution when a problem is presented. 
+%---------------------------------------------2nd Column----------------------------------------------
+\switchcolumn
 
-\cvevent{Vice President of Location \& Services}{Google}{Oct 2010 -- July 2012}{Palo Alto, CA}
-\begin{itemize}
-\item Position Google Maps as the world leader in mobile apps and navigation
-\item Oversaw 1000+ engineers and product managers working on Google Maps, Google Places and Google Earth
-\end{itemize}
+% Working interests
+\cvsection{Work Interests}
+\cvachievement{\faMicrochip}{Embedded Systems}{firmware, hardware design, FPGA development}\\
+\cvachievement{\faWifi}{Internet of Thing (IoT)}{connection of several embedded systems}\\
+\cvachievement{\faWaveSquare}{Digital Signal Processing (DSP)}{data processing eitheir in embedded systems or other machines}\\
+\cvachievement{\faEye}{Image Processing}{patterns/objects identification in digital images}\\
+\cvsection{Skills}
 
-\divider
+\cvtag{C/C++}
+\cvtag{MatLab}
+\cvtag{Python}
+\cvtag{Java}
 
-\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
+\divider\smallskip
+\\
+\cvtag{VHDL}
+\cvtag{LaTeX}
+\cvtag{KiCad}
+\cvtag{Bash}
 
-\divider
+%%Languages
+\cvsection{Languages}
+\cvskill{Portuguese}{5}
+\cvskill{English}{3}
+%
+%
+\cvsection{Hobbies}
+\cvtag{Futsal}
+\cvtag{Tennis}
+\cvtag{DIY}\\
+\divider\smallskip
+\\
+\cvtag{History}
+\cvtag{Gastronomy}
+\cvtag{Brewing}
+\end{paracol}
 
-\cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
-
-\begin{itemize}
-\item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
-\end{itemize}
-
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-
-\cvsection{A Day of My Life}
-
+\end{document}
+%%
+% ------------------------Informations of use------------------------ %
+%
+% -----------------------Extras for latter use----------------------- %
+%
+% ***************************Publications**************************** %
+%
+%\cvsection{Publications}
+%\nocite{*}
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%\divider
+%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+%\divider
+%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+%
+%
+%
+% *****************************References**************************** %
+%
+%\cvsection{Referees}
+%\cvref{name}{email}{mailing address}
+%\divider
+%\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}{Address Line 1\\Address line 2}
+%
+%
+%
+% ****************************SkillsChart**************************** %
+%
+%\cvsection{Languages}
+%\cvskill{Portuguese}{5}
+%\cvskill{English}{3}
+%
+%
+%
+% *****************************TagCharts***************************** %
+%
+%\cvsection{Hard Skills}
+%\cvtag{C/C++}
+%\cvtag{MatLab}
+%\cvtag{Python}
+%\cvtag{Java}
+%\smallskip
+%\\
+%\cvtag{VHDL}
+%\cvtag{LaTeX}
+%\cvtag{KiCad}
+%\cvtag{Bash}
+%
+%
+%
+% ****************************Achievement**************************** %
+%
+%\cvsection{Interests}
+%\cvachievement{Illustration}{Title}{Description}
+%\divider
+%\cvachievement{\faHeartbeat}{Title}{Description}
+%
+%
+%
+% ****************************WhellChart**************************** %
+%
+%\cvsection{A Day of My Life}
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{
 % comma-separated list of value/text width/color/detail}
 % Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
-\newpage
-
-\cvsection{Publications}
-
-\nocite{*}
-
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
-
-\divider
-
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
-
-%% Switch to the right column. This will now automatically move to the second
-%% page if the content is too long.
-\switchcolumn
-
-\cvsection{Life Philosophy}
-\begin{quote}
-``If you don't have any shadows, you're not standing in the light.''
-\end{quote}
-
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
-
-\divider
-
-\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-
-\divider
-
-\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
-
-\cvsection{Strengths}
-
-\cvtag{Hard-working (18/24)}
-\cvtag{Persuasive}\\
-\cvtag{Motivator \& Leader}
-
-\divider\smallskip
-
-\cvtag{UX}
-\cvtag{Mobile Devices \& Applications}
-\cvtag{Product Management \& Marketing}
-
-\cvsection{Languages}
-
-\cvskill{English}{5}
-% \divider
-
-\cvskill{Spanish}{4}
-% \divider
-
-\cvskill{German}{3}
-
-
-\cvsection{Education}
-
-\cvevent{M.S.\ in Computer Science}{Stanford University}{Sept 1997 -- June 1999}{}
-
-\divider
-
-\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
-
-\newpage
-
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
-
-\end{paracol}
-
-\end{document}
+%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/13em/accent!30/Sleeping \& dreaming about work,
+%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%  20/11em/accent!40/Spending time with family,
+%  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+%  5/8em/accent!20/Baking cupcakes
+%}
+%
+%
+%
+% *****************************Events***************************** %
+%
+% \cvevent{Function}{Company}{Date}{Place}
+% \begin{itemize}
+% \item Relevant information about their functions
+% \item Relevant information about the work done there 
+% \end{itemize}
+%
+%\cvsection{Experience}
+%\cvevent{\href{https://eestec.net/cities/aveiro/}{EESTEC (J)LC Aveiro}}{}{2016 -- Present}{Aveiro, Portugal}
+%\begin{itemize}
+%  \item Head-Organizer 1st Edition DETI Pymps UA (Pimp my DETI) - October 2018 to February 2019 (JLC Aveiro)
+%  \item Treasurer - 2018 (JLC Aveiro)
+%  \item ChairPerson - 2019 ((J)LC Aveiro)
+%  \item Oversight Committe - 2020 (LC Aveiro)
+%  \item History Collector, Data Team - November 2019 to August 2020 (EESTEC)
+%\end{itemize}
+%
+%
+%
+% ***************************Small Divider*************************** %
+% \divider - Creates a divider between events with slashes
+%
+%
+%
+%*******************************Quotes******************************* %
+%
+%\cvsection{Working Philosophy}
+%\begin{quote}
+%``If you don't have any shadows, you're not standing in the light.''
+%\end{quote}
+%
+%
+%
+% ***************************Change Column*************************** %
+%
+% \switchcolumn
+%
+%
+%
+% ****************************Change Page**************************** %
+%
+% \newpage
+%
+%
+%
+% **************Start document with divided in columns*************** %
+%
+%\begin{paracol}{nrOfColumns}
+%\end{paracol}
+%
+%
